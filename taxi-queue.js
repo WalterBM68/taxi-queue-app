@@ -1,7 +1,14 @@
-function TaxiQueue() {
+function TaxiQueue(countAllPassengers, countAllTaxis) {
 
 	let passengerCount = 0;
+	if(countAllPassengers){
+		passengerCount = countAllPassengers;
+	}
+
 	let taxiCount = 0;
+	if(countAllTaxis){
+		taxiCount = countAllTaxis;
+	}
 
 	function joinQueue() {
         passengerCount++;
